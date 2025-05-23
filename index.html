@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Staking DApp</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.2.0/ethers.umd.min.js" type="application/javascript"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Simple Staking DApp</h1>
+            <div id="wallet-info">
+                <button id="connect-wallet">Connect Wallet</button>
+                <p id="wallet-address"></p>
+            </div>
+        </header>
+
+        <main>
+            <div class="card">
+                <h2>Token Balance</h2>
+                <div class="balance-info">
+                    <p>Your Balance: <span id="token-balance">0</span> SIMP</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Stake Tokens</h2>
+                <div class="input-group">
+                    <input type="number" id="stake-amount" placeholder="Amount to stake">
+                    <button id="stake-button">Stake</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Your Stake</h2>
+                <div class="stake-info">
+                    <p>Staked Amount: <span id="staked-amount">0</span> SIMP</p>
+                    <p>Rewards Earned: <span id="rewards">0</span> SIMP</p>
+                    <p>Staking Time: <span id="staking-time">0</span> days</p>
+                </div>
+                <button id="withdraw-button">Withdraw</button>
+            </div>
+        </main>
+
+        <div id="status-message"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 
