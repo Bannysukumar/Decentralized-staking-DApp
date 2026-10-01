@@ -1,41 +1,62 @@
-<!-- readme-seo: bannysukumar -->
+# Simple Staking DApp
 
-# Decentralized Staking dApp
+Simple Staking DApp ships SimpleStaking.sol, SimpleToken.sol alongside index.html. The HTML document title is "Simple Staking DApp".
 
-**Decentralized Staking dApp** is an open-source decentralized token-staking dApp. The code is written mainly in JavaScript and maintained by [Banny Sukumar](https://github.com/Bannysukumar), a blockchain and full-stack developer.
+[![License](https://img.shields.io/github/license/Bannysukumar/Decentralized-staking-DApp)](https://github.com/Bannysukumar/Decentralized-staking-DApp/blob/main/LICENSE) [![Stars](https://img.shields.io/github/stars/Bannysukumar/Decentralized-staking-DApp)](https://github.com/Bannysukumar/Decentralized-staking-DApp/stargazers) [![Last commit](https://img.shields.io/github/last-commit/Bannysukumar/Decentralized-staking-DApp)](https://github.com/Bannysukumar/Decentralized-staking-DApp/commits/main)
 
-This repository is public so developers can read the source, reuse it under the MIT License, and send improvements.
+## Overview
 
-## About this project
+Simple Staking DApp ships SimpleStaking.sol, SimpleToken.sol alongside index.html. The HTML document title is "Simple Staking DApp".
 
-Decentralized Staking dApp lives at [`github.com/Bannysukumar/Decentralized-staking-DApp`](https://github.com/Bannysukumar/Decentralized-staking-DApp). Use it as a starting point for a decentralized token-staking dApp, or study how the JavaScript parts fit together.
 
-## Tech stack
+What is actually in the repository: `SimpleStaking.sol`, `SimpleToken.sol`. GitHub reports the primary language as JavaScript.
 
-- Primary language: **JavaScript**
-- License: **MIT**
-- Maintainer: [Banny Sukumar](https://github.com/Bannysukumar)
+## Features
 
-## Getting started
+
+- SimpleStaking contract with transfer, transferFrom, stake, calculateReward
+- SimpleToken contract with transfer
+
+## Tech Stack
+
+| Technology | Where it shows up |
+|---|---|
+| Solidity | Smart contracts |
+
+## Project Architecture
+
+Browser page → Solidity contract. The frontend loads ethers or web3.
+
+## Project Structure
+
+```text
+Decentralized-staking-DApp/
+├── SimpleStaking.sol
+├── SimpleToken.sol
+├── app.js
+├── index.html
+├── styles.css
+```
+
+## Getting Started
 
 ```bash
 git clone https://github.com/Bannysukumar/Decentralized-staking-DApp.git
 cd Decentralized-staking-DApp
 ```
 
-Open the project in your editor. Install dependencies only if this repo already includes a manifest such as `package.json`, `requirements.txt`, or a `.csproj` file.
-
 ## Contributing
 
-Contributions are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) before you open a pull request.
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE). Copyright (c) 2026 Banny Sukumar.
+Licensed under MIT. See [LICENSE](LICENSE).
 
 ## Author
+
+[Banny Sukumar](https://github.com/Bannysukumar)
 
 - GitHub: [@Bannysukumar](https://github.com/Bannysukumar)
 - Portfolio: [adepu-sukumar.vercel.app](https://adepu-sukumar.vercel.app/)
 - LinkedIn: [Adepu Sukumar](https://www.linkedin.com/in/adepu-sukumar-59b423351)
-- ORCID: [0009-0007-9766-6579](https://orcid.org/0009-0007-9766-6579)
